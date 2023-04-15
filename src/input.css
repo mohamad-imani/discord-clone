@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+@font-face {
+    font-family: "gg sans bold";
+    src: url(/fonts/gg\ sans\ Bold.woff);
+    
+}
+
+@font-face {
+    font-family: "gg sans Normal Regular";
+    src: url(/fonts/gg\ sans\ Regular.woff);
+    
+}
+
+@font-face {
+    font-family: "gg sans Medium Regular";
+    src: url(/fonts/gg\ sans\ Medium.woff);
+    
+}
+
+
+@font-face {
+    font-family: "Ginto";
+    src: url(/fonts/Ginto-Nord-700.woff);
+    
+}
+
+
+   @media(min-width: 768px){
+    .imagine{
+        font-size: 56px!important;
+        line-height: 1;
+        font-weight: 800!important;
+
+    }
+   }    
+
+ .imagine-clamp {
+     font-size: clamp(24px,5vw,44px)
+    }
+.ws{
+    word-spacing: .1rem;
+}
+
+.h-clamp{
+    font-size:clamp(20px,4vw,40px);
+    
+}
+.p-clamp{
+
+    font-size:clamp(16px,2vw,20px);
+}
